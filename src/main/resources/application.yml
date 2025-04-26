@@ -1,0 +1,8 @@
+jwt:
+  verify-url: /verify
+  refresh-url: /refreshtoken
+  secret: this_secret_key_must_be_at_least_64_bytes_long
+  secret2-f-a: this_secret_key_must_be_at_least_64_bytes_long_too 
+  token-validity: 2d
+  token-validity2-f-a: 2m
+  refresh-token-validity: 2h

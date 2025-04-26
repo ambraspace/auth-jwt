@@ -1,0 +1,44 @@
+{"properties": [
+  {
+    "name": "jwt.secret",
+    "type": "java.lang.String",
+    "description": "A secret key for signing and verifying JWT tokens (min. 256 bits i.e. 32 characters)",
+    "defaultValue": ""
+  },
+  {
+    "name": "jwt.token-validity",
+    "type": "java.time.Duration",
+    "description": "Validity period for generated JWT tokens",
+    "defaultValue": "2d"
+  },
+  {
+    "name": "jwt.secret-2fa",
+    "type": "java.lang.String",
+    "description": "A secret key for signing and verifying JWT 2FA tokens (min. 256 bits i.e. 32 characters)",
+    "defaultValue": ""
+  },
+  {
+    "name": "jwt.token-validity-2fa",
+    "type": "java.time.Duration",
+    "description": "Validity period for temporary 2FA tokens",
+    "defaultValue": "2m"
+  },
+  {
+    "name": "jwt.refresh-token-validity",
+    "type": "java.time.Duration",
+    "description": "How long after JWT expiration you are able to renew the token",
+	"defaultValue": "2h"
+  },
+  {
+    "name": "jwt.verify-url",
+    "type": "java.lang.String",
+    "description": "URL of an end point where username and 2FA code is sent",
+    "defaultValue": "/verify"
+  },
+  {
+    "name": "jwt.refresh-url",
+    "type": "java.lang.String",
+    "description": "URL of an end point where a user can acquire new JWT after token expiration",
+    "defaultValue": "/refreshtoken"
+  }
+]}
